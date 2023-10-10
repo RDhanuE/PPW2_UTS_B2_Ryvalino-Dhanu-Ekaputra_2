@@ -22,3 +22,5 @@ Route::get('/', function () {
 });
 
 Route::resource('products', ProductController::class);
+
+Route::get('index', [ProductController::class, 'index'])->name('index');
